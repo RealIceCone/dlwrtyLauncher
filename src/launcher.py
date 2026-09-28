@@ -96,7 +96,7 @@ class LaunchThread(QThread):
 
             # Install Minecraft
             install_minecraft_version(
-                versionid=self.version_id, minecraft_directory=minecraft_directory,
+                version=self.version_id, minecraft_directory=minecraft_directory,
                 callback={'setStatus': self.update_progress_label,
                           'setProgress': self.update_progress,
                           'setMax': self.update_progress_max})
